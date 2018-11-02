@@ -25,7 +25,8 @@ df <- read.csv("XXXXXXX")
 XXXXXXX(df)
 
 # ...or an arbitrary number of rows
-head(df, XXXXXXX) - Display first 15 rows
+# Display first 15 rows
+head(df, XXXXXXX) 
 
 # show the TAIL of the file (last 6 rows)
 XXXXXXX(df)
@@ -112,15 +113,18 @@ df2 <- XXXXXXX(df$Deliciousness.Rating, !is.na(df$Deliciousness.Rating))
 # and then we can export/write that DF to CSV in our working directory
 write.csv(df2, "XXXXXXXX")
 
-# and finally, delete from memory
+# and finally, delete from your environment/remove from memory
 # (which is okay because we already exported this to csv)
 
-rm(df)
+rm(XXXXXXXX)
 
 
 
 
 
 # CODE USED TO GENERATE ADDITIONAL COLUMNS
+# try looking at the syntax and trying to understand what this does
+# or changing it in order to do your own thing!
+
 df$Amazon.Rating <- sample(-1:5, nrow(df), replace=TRUE)
 df$Deliciousness.Rating <- sample(-1:1, nrow(df), replace=TRUE) 
