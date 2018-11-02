@@ -83,7 +83,7 @@ two_cols <- df[ , c(XXXXXXX, XXXXXXX)]
 # instead of the old one
 colnames(XXXXXXX)
 colnames(XXXXXXX)[XXXXXXX]
-colnames(XXXXXXX)[XXXXXXX] <- "Number of Stars"
+colnames(XXXXXXX)[XXXXXXX] <- "Number.of.Stars"
 colnames(XXXXXXX)[XXXXXXX]
 
 
