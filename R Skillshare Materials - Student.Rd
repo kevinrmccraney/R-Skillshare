@@ -44,7 +44,7 @@ XXXXXXX(df)
 str(df)
 
 # you can also pretty-print it using View()
-View(XXXXXXX(df))
+View(XXXXXXX)
 
 # SUMMARY of the object (counts of values, summary stats, etc.)
 XXXXXXX(df)
@@ -53,7 +53,7 @@ XXXXXXX(df)
 XXXXXXX(df) 
 
 # get the COLUMN NAMES for later processing
-colnames(df)
+XXXXXXX(df)
 
 # using the $ operator to select just one column of the dataframe
 # 
@@ -122,9 +122,28 @@ rm(XXXXXXXX)
 
 
 
-# CODE USED TO GENERATE ADDITIONAL COLUMNS
-# try looking at the syntax and trying to understand what this does
-# or changing it in order to do your own thing!
 
-df$Amazon.Rating <- sample(-1:5, nrow(df), replace=TRUE)
-df$Deliciousness.Rating <- sample(-1:1, nrow(df), replace=TRUE) 
+
+############ Exercises for you to do!
+# Find the class of of each of the first 5 columns
+
+
+
+# Rename Column #8 to “Rating”
+
+
+
+
+# Find how many “Amazon Ratings” there are, and the average (mean)
+
+
+
+
+# Take the Deliciousness columns and replace all the -1s with NAs
+
+
+
+
+# Bonus: Make a new column, calling it whatever you like, and use a built-in function to fill it with random numbers.
+
+
