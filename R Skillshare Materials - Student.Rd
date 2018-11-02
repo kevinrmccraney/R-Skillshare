@@ -102,19 +102,26 @@ df$XXXXXXX[df$XXXXXXX == "-1"] <- NA
 # displays boolean (T/F) values for NA. Boolean values are equivalent to 1/0
 # so you can SUM them to get the number of NAs
 
-is.na(df$Deliciousness.Rating)
+is.na(df$Number.of.Stars)
 XXXXXXX(is.na(df$XXXXXXX))
 
 # we can also SUBSET the rows with NO NA values by assigning to a new df
 # we use a new attribute here--a logical operator '!' which means NOT
+# in order to change the second argument of the function
 
-df2 <- XXXXXXX(df$Deliciousness.Rating, !is.na(df$Deliciousness.Rating))
+df2 <- XXXXXXX(df, !is.na(df$Number.of.Stars))
+
+# let's call SUMMARY on the STARS column of DF and DF2 to see what the differences are
+XXXXXXX(XXXXXXX)
+XXXXXXX(XXXXXXX)
 
 # and then we can export/write that DF to CSV in our working directory
 write.csv(df2, "XXXXXXXX")
 
-# and finally, delete from your environment/remove from memory
-# (which is okay because we already exported this to csv)
+# and finally, delete all the different things we made
+# from your environment/remove from memory
+# (this is okay because we already exported this to csv,
+# but normally you should be careful about this)
 
 rm(XXXXXXXX)
 
