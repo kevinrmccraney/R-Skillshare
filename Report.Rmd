@@ -1,0 +1,65 @@
+---
+title: "nassCDS Report"
+author: "JRaman"
+date: "November 2, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#All the load package statements go in here
+library(ggplot2)
+library(dplyr)
+source('Part 2-Analysis.R')
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.  
+
+If you need a Markdown Reference/Cheatsheet, here it is: <https://www.markdownguide.org/cheat-sheet/>
+
+
+
+# Quick Markdown 101
+## As you can tell, 
+### these are different header types;  
+#### the more '#'s there are,
+##### the smaller the text size
+
+> This is a blockquote, use it whenever you have an important point to make.   
+
+#### Note: You start new lines by inserting __TWO SPACES__ after a word. *Weird, I know*.  
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+### Injuries classification by severity
+```{r}
+head(nassCDS, 25)
+```
+
+## Including Plots
+
+### A box plot describing accidents in 1997 and vehicle speeds
+
+```{r accidentsIn1997}
+accidents97_plot
+```
+
+### A box plot describing accidents in 1997 and vehicle speeds  
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r accidentsIn1997echo, echo=FALSE}
+accidents97_plot
+```
+
+
+
+###A stacked bar plot to visualize the injury severity for female drivers/passengers:
+```{r}
+injurySeverityPlot
+```
+
+
